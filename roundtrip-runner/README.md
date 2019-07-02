@@ -10,9 +10,10 @@ This plugin extends the N4JS IDE by a runner that allows to execute N4IDL migrat
 
 # Building 
 
-1. Import all projects in `n4js/` into an N4JS IDE
-2. Run a full build of all projects
-3. Use the `npx webpack` command in the `n4js/com.enfore.n4js.n4idl.roundtrip.viewer.parent` directory of this repository, to package the viewer source files using webpack. This will create the required files in `plugins/com.enfore.n4js.n4idl.roundtrip/res/js`.
+1. Import all projects in `../migrations` into an N4JS IDE
+2. Run a full build of all projects (including N4JS's Projects)
+3. Install the dependencies of the `n4js/com.enfore.n4js.n4idl.roundtrip.viewer.parent` project
+4. Use the `npx webpack` command in the `n4js/com.enfore.n4js.n4idl.roundtrip.viewer.parent` directory of this repository, to package the viewer source files using webpack. This will create the required files in `plugins/com.enfore.n4js.n4idl.roundtrip/res/js`.
 
 # Update Site Creation
 

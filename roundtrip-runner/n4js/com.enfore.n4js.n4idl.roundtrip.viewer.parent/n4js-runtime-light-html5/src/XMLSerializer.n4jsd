@@ -1,5 +1,0 @@
-@@Global @@ProvidedByRuntime
-
-export public external class XMLSerializer {
-	public serializeToString(element : HTMLElement) : string
-}

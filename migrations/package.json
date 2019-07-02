@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "workspaces": [
+    "com.enfore.n4js.n4idl.roundtrip",
+    "com.enfore.n4js.n4idl.roundtrip.tests",
+    "com.enfore.n4js.n4idl.roundtrip.viewer",
+    "org.eclipse.n4js.n4idl.runtime",
+    "org.eclipse.n4js.n4idl.runtime.testhelpers",
+    "org.eclipse.n4js.n4idl.runtime.tests",
+    "scenario.catalogue"
+  ]
+}

@@ -70,7 +70,7 @@ import com.enfore.n4js.n4idl.roundtrip.server.RoundTripResultStorage.RoundTripRe
 	 * but before any of the viewer specific code has been executed.
 	 */
 	protected def createScript(RoundTripResult result) {
-		return '''const moduleName = "«result.module»"; const data = JSON.parse(`«result.data»`);'''
+		return '''let moduleName = "«result.module»"; let data = JSON.parse(`«result.data»`); console.log("Hello");'''
 	}
 
 	/**

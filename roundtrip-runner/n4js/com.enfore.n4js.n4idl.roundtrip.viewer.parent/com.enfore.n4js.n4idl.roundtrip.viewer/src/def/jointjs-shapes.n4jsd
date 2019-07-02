@@ -1,5 +1,0 @@
-import {Element} from "jointjs"
-
-export external public class Generic extends Element {
-	public initialize(...args : any);
-}

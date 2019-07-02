@@ -17,7 +17,7 @@
     "webpack": "^3.10.0"
   },
   "dependencies": {
-    "jointjs": "^2.0.1",
+    "jointjs": "2.0.1",
     "n4js-node": "^0.6.0",
     "svg-pan-zoom": "^3.5.3"
   }

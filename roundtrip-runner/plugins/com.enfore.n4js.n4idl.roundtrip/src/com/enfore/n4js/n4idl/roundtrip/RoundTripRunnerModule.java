@@ -10,8 +10,6 @@
  */
 package com.enfore.n4js.n4idl.roundtrip;
 
-import org.eclipse.n4js.runner.nodejs.NodeEngineCommandBuilder;
-import org.eclipse.n4js.runner.nodejs.NodeRunOptions;
 import org.eclipse.xtext.service.AbstractGenericModule;
 
 public class RoundTripRunnerModule extends AbstractGenericModule {
@@ -19,18 +17,18 @@ public class RoundTripRunnerModule extends AbstractGenericModule {
 	 * The ID of the runner UI module.
 	 */
 	public static final String RUNNER_UI_MODULE_ID = RoundTripRunnerModule.class.getName();
-	/**
-	 * Custom {@link NodeRunOptions} implementation.
-	 */
-	public Class<? extends NodeRunOptions> bindNodeRunOptions() {
-		return RoundTripRunOptions.class;
-	}
-
-	/**
-	 * Custom command builder to inject roundTrip data to ELF code.
-	 */
-	public Class<? extends NodeEngineCommandBuilder> bindNodeEngineCommandBuilder() {
-		return RoundTripEngineCommandBuilder.class;
-	}
-
+	
+//	/**
+//	 * Custom {@link NodeRunOptions} implementation.
+//	 */
+//	public Class<? extends NodeRunOptions> bindNodeRunOptions() {
+//		return RoundTripRunConfiguration.class;
+//	}
+//
+//	/**
+//	 * Custom command builder to inject roundTrip data to ELF code.
+//	 */
+//	public Class<? extends NodeEngineCommandBuilder> bindNodeEngineCommandBuilder() {
+//		return RoundTripEngineCommandBuilder.class;
+//	}
 }

@@ -21,13 +21,14 @@ import org.eclipse.ui.IActionBars;
  */
 public class FullObjectGraphViewPart extends ObjectGraphViewPart {
 
+	@SuppressWarnings("restriction")
 	@Override
 	public void createPartControl(Composite parent) {
 		super.createPartControl(parent);
 
-		addAction("Save PDF", () -> getBrowser().evaluate("savePDF();"));
-		addAction("Save SVG", () -> getBrowser().evaluate("saveSVG();"));
-		addAction("Toggle Trace Links", () -> getBrowser().evaluate("toggleTraceLinks();"));
+		addAction("Save PDF", () -> getBrowserViewer().getBrowser().evaluate("savePDF();"));
+		addAction("Save SVG", () -> getBrowserViewer().getBrowser().evaluate("saveSVG();"));
+		addAction("Toggle Trace Links", () -> getBrowserViewer().getBrowser().evaluate("toggleTraceLinks();"));
 	}
 
 	@Override

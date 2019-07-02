@@ -1,1 +1,0 @@
-export default external public function SVGPanZoom(element : Object, attrs : ~Object+);

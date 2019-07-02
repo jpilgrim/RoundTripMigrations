@@ -1,8 +1,0 @@
-import {RoundTripMigration} from "com/enfore/n4js/n4idl/roundtrip/RoundTripMigration"
-
-export public interface RoundTripModificationMigration<T1, T2> extends RoundTripMigration<T1, T2> {
-	/**
-	 * Perform a modification on the migrated instance of the object.
-	 */
-	public modifyMigratedInstance(o2 : T2) : void;
-}

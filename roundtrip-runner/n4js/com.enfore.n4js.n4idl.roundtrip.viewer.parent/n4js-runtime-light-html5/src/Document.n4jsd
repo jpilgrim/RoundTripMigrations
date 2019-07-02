@@ -1,7 +1,0 @@
-@@Global @@ProvidedByRuntime
-
-export external public class Document extends Object+ {
-	public querySelector(selector : string) : HTMLElement+
-}
-
-export external public const document: Document+;

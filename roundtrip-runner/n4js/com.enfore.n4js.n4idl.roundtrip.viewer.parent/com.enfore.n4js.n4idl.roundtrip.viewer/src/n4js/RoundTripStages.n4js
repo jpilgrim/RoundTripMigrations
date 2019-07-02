@@ -1,8 +1,0 @@
-export public const ROUNDTRIP_STAGE_LABELS : Object+ = {
-	"original": "Original Object Graph",
-	"migrated": "Migrated Object Graph",
-	"migratedModified": "Modified Migrated Object Graph",
-	"roundTrip": "Round Trip Object Graph"
-}
-
-export public const ROUNDTRIP_STAGES = Object.keys(ROUNDTRIP_STAGE_LABELS);

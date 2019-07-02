@@ -1,5 +1,0 @@
-import {SerializedObjectGraph} from "GraphModel";
-import {MultiGraphModel} from "GraphModel";
-
-let rawData : Object+ = eval("data"); // obtain data from the global 'data' variable			
-export const GraphData = rawData as union{SerializedObjectGraph, MultiGraphModel};

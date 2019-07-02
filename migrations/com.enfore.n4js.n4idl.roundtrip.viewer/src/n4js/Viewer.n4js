@@ -26,9 +26,11 @@ import jQuery from "jquery";
 import {TraceLink} from "links/TraceLink";
 import {InstanceShape} from "shapes/InstanceShape";
 import {StageShape} from "shapes/StageShape";
-import svgPanZoom from "svg-pan-zoom";
 import {Link} from "jointjs";
 import {ViewerLayout} from "layouts/RoundTripLayouts";
+
+// use dynamic import since type definitions are not working
+import * as svgPanZoom+ from "svg-pan-zoom";
 
 /**
  * Layout options for the DAG-algorithm that layouts
@@ -74,7 +76,7 @@ export public class Viewer {
 	
 	initPanAndZoom() {
 		// initialise svgPanZoom
-		svgPanZoom(this.paper.$el.find("svg").get(0), {
+		(svgPanZoom as Function)(this.paper.$el.find("svg").get(0), {
 			beforePan: () => {
 				// only pan if paper is not the current responder (when moving links and cells)
 				return !this.mouseResponder && ! this.mouseDown;

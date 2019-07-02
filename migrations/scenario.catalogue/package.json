@@ -16,9 +16,11 @@
 	},
 	"dependencies": {
 		"com.enfore.n4js.n4idl.roundtrip": "0.0.1",
+		"n4js-runtime": "*",
 		"org.eclipse.n4js.n4idl.runtime": "0.0.1",
-		"org.eclipse.n4js.mangelhaft": "0.1",
-		"org.eclipse.n4js.mangelhaft.assert": "0.1",
-		"n4js-runtime-es2015": "0.1"
+		"org.eclipse.n4js.mangelhaft": "0.14.10",
+		"n4js-mangelhaft-cli": "*",
+		"org.eclipse.n4js.mangelhaft.assert": "0.14.10",
+		"n4js-runtime-es2015": "0.14.10"
 	}
 }

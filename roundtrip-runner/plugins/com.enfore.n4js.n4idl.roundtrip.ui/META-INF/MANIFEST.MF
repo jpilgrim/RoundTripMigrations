@@ -23,3 +23,6 @@ Require-Bundle: com.enfore.n4js.n4idl.roundtrip,
  org.eclipse.jetty.server;bundle-version="9.3.9"
 Import-Package: org.apache.log4j
 Automatic-Module-Name: com.enfore.n4js.n4idl.roundtrip.ui
+Export-Package: com.enfore.n4js.n4idl.roundtrip.ui,
+ com.enfore.n4js.n4idl.roundtrip.ui.launch,
+ com.enfore.n4js.n4idl.roundtrip.ui.views
